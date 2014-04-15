@@ -1,0 +1,146 @@
+C:\dart\dart-sdk\bin\dart.exe --enable-checked-mode --debug:50826 Parser.dart
+Please enter an expression to parse:
+{ + 1 2 }
+Your input is { + 1 2 }
+Its parsed output is: <AdditionExpression <NumericExpression 1> <NumericExpression 2>>
+Please enter an expression to parse:
+3
+Your input is 3
+Its parsed output is: <NumericExpression 3>
+Please enter an expression to parse:
+-12
+Your input is -12
+Its parsed output is: <NumericExpression -12>
+Please enter an expression to parse:
+-11.0
+Your input is -11.0
+Its parsed output is: <NumericExpression -11.0>
+Please enter an expression to parse:
+-1
+Your input is -1
+Its parsed output is: <NumericExpression -1>
+Please enter an expression to parse:
+0
+Your input is 0
+Its parsed output is: <NumericExpression 0>
+Please enter an expression to parse:
+{ + 1 2 }
+Your input is { + 1 2 }
+Its parsed output is: <AdditionExpression <NumericExpression 1> <NumericExpression 2>>
+Please enter an expression to parse:
+{ - 1 2 }
+Your input is { - 1 2 }
+Its parsed output is: <SubtractionExpression <NumericExpression 1> <NumericExpression 2>>
+Please enter an expression to parse:
+{ + 1 { - 3 4 } }
+Your input is { + 1 { - 3 4 } }
+Its parsed output is: <AdditionExpression <NumericExpression 1> <SubtractionExpression <NumericExpression 3> <NumericExpression 4>>>
+Please enter an expression to parse:
+{ + { - 1 4 } { - 3 4 } }
+Your input is { + { - 1 4 } { - 3 4 } }
+Its parsed output is: <AdditionExpression <SubtractionExpression <NumericExpression 1> <NumericExpression 4>> <SubtractionExpression <NumericExpression 3> <NumericExpression 4>>>
+Please enter an expression to parse:
+{ + { + { - { - 1 4 } { - 3 4 } } 5 } { + 6 3 } }
+Your input is { + { + { - { - 1 4 } { - 3 4 } } 5 } { + 6 3 } }
+Its parsed output is: <AdditionExpression <AdditionExpression <SubtractionExpression <SubtractionExpression <NumericExpression 1> <NumericExpression 4>> <SubtractionExpression <NumericExpression 3> <NumericExpression 4>>> <NumericExpression 5>> <AdditionExpression <NumericExpression 6> <NumericExpression 3>>>
+Please enter an expression to parse:
+{ + 7 2 }
+Your input is { + 7 2 }
+Its parsed output is: <AdditionExpression <NumericExpression 7> <NumericExpression 2>>
+Please enter an expression to parse:
+{ + 4 4 }
+Your input is { + 4 4 }
+Its parsed output is: <AdditionExpression <NumericExpression 4> <NumericExpression 4>>
+Please enter an expression to parse:
+{ + 5 5 }
+Your input is { + 5 5 }
+Its parsed output is: <AdditionExpression <NumericExpression 5> <NumericExpression 5>>
+Please enter an expression to parse:
+{ + 0 0 }
+Your input is { + 0 0 }
+Its parsed output is: <AdditionExpression <NumericExpression 0> <NumericExpression 0>>
+Please enter an expression to parse:
+{ - 7 2 }
+Your input is { - 7 2 }
+Its parsed output is: <SubtractionExpression <NumericExpression 7> <NumericExpression 2>>
+Please enter an expression to parse:
+{ - 4 4 }
+Your input is { - 4 4 }
+Its parsed output is: <SubtractionExpression <NumericExpression 4> <NumericExpression 4>>
+Please enter an expression to parse:
+{ - 5 5 }
+Your input is { - 5 5 }
+Its parsed output is: <SubtractionExpression <NumericExpression 5> <NumericExpression 5>>
+Please enter an expression to parse:
+{ - 0 0 }
+Your input is { - 0 0 }
+Its parsed output is: <SubtractionExpression <NumericExpression 0> <NumericExpression 0>>
+Please enter an expression to parse:
+{ x }
+Your input is { x }
+Its parsed output is: <IdentifierExpression x>
+Please enter an expression to parse:
+
+Your input is
+Parse error: Unable to parse as number:
+Please enter an expression to parse:
+{ name }
+Your input is { name }
+Its parsed output is: <IdentifierExpression name>
+Please enter an expression to parse:
+{ hello }
+Your input is { hello }
+Its parsed output is: <IdentifierExpression hello>
+Please enter an expression to parse:
+{ id }
+Your input is { id }
+Its parsed output is: <IdentifierExpression id>
+Please enter an expression to parse:
+{ if0 1 0 0 }
+Your input is { if0 1 0 0 }
+Its parsed output is: <IfExpression <NumericExpression 1> <NumericExpression 0> <NumericExpression 0>>
+Please enter an expression to parse:
+{ if0 1 1 0 }
+Your input is { if0 1 1 0 }
+Its parsed output is: <IfExpression <NumericExpression 1> <NumericExpression 1> <NumericExpression 0>>
+Please enter an expression to parse:
+{ if0 { + 0 0 } 0 1 }
+Your input is { if0 { + 0 0 } 0 1 }
+Its parsed output is: <IfExpression <AdditionExpression <NumericExpression 0> <NumericExpression 0>> <NumericExpression 0> <NumericExpression 1>>
+Please enter an expression to parse:
+{ if0 { - 1 0 } { + 1 0 } { - 1 1 } }
+Your input is { if0 { - 1 0 } { + 1 0 } { - 1 1 } }
+Its parsed output is: <IfExpression <SubtractionExpression <NumericExpression 1> <NumericExpression 0>> <AdditionExpression <NumericExpression 1> <NumericExpression 0>> <SubtractionExpression <NumericExpression 1> <NumericExpression 1>>>
+Please enter an expression to parse:
+{ fun { x } 0 }
+Your input is { fun { x } 0 }
+Its parsed output is: <FunctionExpression <IdentifierExpression x> <NumericExpression 0>>
+Please enter an expression to parse:
+{ fun { id } { + 9 9 } }
+Your input is { fun { id } { + 9 9 } }
+Its parsed output is: <FunctionExpression <IdentifierExpression id> <AdditionExpression <NumericExpression 9> <NumericExpression 9>>>
+Please enter an expression to parse:
+{ fun { id } { + 9 9 } }
+Your input is { fun { id } { + 9 9 } }
+Its parsed output is: <FunctionExpression <IdentifierExpression id> <AdditionExpression <NumericExpression 9> <NumericExpression 9>>>
+Please enter an expression to parse:
+{ fun { sdsdg } { + 1 0 } }
+Your input is { fun { sdsdg } { + 1 0 } }
+Its parsed output is: <FunctionExpression <IdentifierExpression sdsdg> <AdditionExpression <NumericExpression 1> <NumericExpression 0>>>
+Please enter an expression to parse:
+{ app 0 0 }
+Your input is { app 0 0 }
+Its parsed output is: <ApplicationExpression <NumericExpression 0> <NumericExpression 0>>
+Please enter an expression to parse:
+{ app 3 3 }
+Your input is { app 3 3 }
+Its parsed output is: <ApplicationExpression <NumericExpression 3> <NumericExpression 3>>
+Please enter an expression to parse:
+{ app { + 2 2 } { - 2 2 } }
+Your input is { app { + 2 2 } { - 2 2 } }
+Its parsed output is: <ApplicationExpression <AdditionExpression <NumericExpression 2> <NumericExpression 2>> <SubtractionExpression <NumericExpression 2> <NumericExpression 2>>>
+Please enter an expression to parse:
+{ app { + { - 4 4 } { - 4 4 } } 1 }
+Your input is { app { + { - 4 4 } { - 4 4 } } 1 }
+Its parsed output is: <ApplicationExpression <AdditionExpression <SubtractionExpression <NumericExpression 4> <NumericExpression 4>> <SubtractionExpression <NumericExpression 4> <NumericExpression 4>>> <NumericExpression 1>>
+Please enter an expression to parse:

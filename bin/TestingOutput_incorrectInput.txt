@@ -1,0 +1,102 @@
+C:\dart\dart-sdk\bin\dart.exe --enable-checked-mode --debug:50837 Parser.dart
+Please enter an expression to parse:
+   {     + 1 2}
+Your input is    {     + 1 2}
+Parse error: Unable to parse as number:
+Please enter an expression to parse:
+abc
+Your input is abc
+Parse error: Unable to parse as number: abc
+Please enter an expression to parse:
+a35
+Your input is a35
+Parse error: Unable to parse as number: a35
+Please enter an expression to parse:
+@#%@
+Your input is @#%@
+Parse error: Unable to parse as number: @#%@
+Please enter an expression to parse:
+
+Your input is
+Parse error: Unable to parse as number:
+Please enter an expression to parse:
+_
+Your input is _
+Parse error: Unable to parse as number: _
+Please enter an expression to parse:
+----
+Your input is ----
+Parse error: Unable to parse as number: ----
+Please enter an expression to parse:
+{ cc c}
+Your input is { cc c}
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
+{ + 7 }
+Your input is { + 7 }
+Parse error: Unable to parse as number: }
+Please enter an expression to parse:
+{ * 6 4 }
+Your input is { * 6 4 }
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
+{% + +}
+Your input is {% + +}
+Parse error: Unable to parse as number: {%
+Please enter an expression to parse:
+x
+Your input is x
+Parse error: Unable to parse as number: x
+Please enter an expression to parse:
+{+ { + s s } 5 }
+Your input is {+ { + s s } 5 }
+Parse error: Unable to parse as number: {+
+Please enter an expression to parse:
+{ d id }
+Your input is { d id }
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
+{1 0 0 }
+Your input is {1 0 0 }
+Parse error: Unable to parse as number: {1
+Please enter an expression to parse:
+{ 1 if0 }
+Your input is { 1 if0 }
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
+{}
+Your input is {}
+Parse error: Unable to parse as number: {}
+Please enter an expression to parse:
+{ if0 {0 } { + 1 0 } { - 1 1
+Your input is { if0 {0 } { + 1 0 } { - 1 1
+Parse error: Unable to parse as number: {0
+Please enter an expression to parse:
+ s x 0
+Your input is  s x 0
+Parse error: Unable to parse as number:
+Please enter an expression to parse:
+{s{id}{+99}}
+Your input is {s{id}{+99}}
+Parse error: Unable to parse as number: {s{id}{+99}}
+Please enter an expression to parse:
+funk { funk } { - { + 0 1 } { + 0 0 } } }
+Your input is funk { funk } { - { + 0 1 } { + 0 0 } } }
+Parse error: Unable to parse as number: funk
+Please enter an expression to parse:
+{ fun { + 1 0 } }
+Your input is { fun { + 1 0 } }
+Parse error: Unable to parse as number: }
+Please enter an expression to parse:
+{ apple 0 0 }", "plication 3 3 }
+Your input is { apple 0 0 }", "plication 3 3 }
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
+{ tapp + 2 2 } { 2 2 } }
+Your input is { tapp + 2 2 } { 2 2 } }
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
+{ { - 4 4 } } 1 }
+Your input is { { - 4 4 } } 1 }
+Parse error: Malformed/Unbalanced compound expression.
+Please enter an expression to parse:
